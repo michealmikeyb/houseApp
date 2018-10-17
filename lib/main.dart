@@ -19,14 +19,6 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'House App',
       theme: new ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or press Run > Flutter Hot Reload in IntelliJ). Notice that the
-        // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.brown,
       ),
       home: new MyHomePage(title: 'Flutter Demo Home Page'),
@@ -49,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   BuildContext con;
 
   void initState(){
+    user = "none";
     now = new DateTime.now();
     restore();
   }
@@ -126,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               itemCount: data.length,
               itemBuilder: (BuildContext context, int index) {
                 return new ListTile(
-                  title: Text(data[index].data["name"]),
+                  title: Text("test ${data[index].data["name"]}"),
                   subtitle: Text("When: ${data[index].data['date']} Where: ${data[index].data['location']}"),
                 );
               }
@@ -135,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )
       ),
       floatingActionButton: RaisedButton.icon(
+        label: Text("Add an Event"),
         icon: Icon(Icons.add),
         onPressed: () async{
           await showDialog(
