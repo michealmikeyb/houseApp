@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1057712626472",
+    "firebase_url": "https://houseapp-57810.firebaseio.com",
+    "project_id": "houseapp-57810",
+    "storage_bucket": "houseapp-57810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057712626472:android:2cc831c9204576f0",
+        "android_client_info": {
+          "package_name": "com.example.houseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057712626472-lpcd223h2m25rvm9nddvk9ahgf84m82c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMgnJ8-gJclISqJTD5tDVfi0ox7yOG_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
