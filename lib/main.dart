@@ -8,6 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'dialogs.dart';
 import 'rulespage.dart';
+import 'challengepage.dart';
 
 void main() => runApp(new MyApp());
 
@@ -101,7 +102,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     builder: (context) => RulesPage())
                   );}
                 ),
-          
+          new ListTile(
+              title: Text("Dog Bowl Challenge"),
+              trailing: Icon(Icons.archive),
+              onTap: (){
+                Navigator.push(
+                  context, 
+                  new MaterialPageRoute(
+                    builder: (context) => ChallengePage())
+                  );}
+                ),
           ]
         )
       ),
